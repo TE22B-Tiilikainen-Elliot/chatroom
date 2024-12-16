@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container" id="login-container">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" id="login-username" />
+      <input type="password" placeholder="Password" id="login-password" />
+      <button type="button" id="login-button">Login</button>
+      <a class="toggle-link" id="show-signup">Don't have an account? Sign up</a>
+    </div>
+
+    <div class="container" id="signup-container" style="display: none">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Username" id="signup-username" />
+      <input type="password" placeholder="Password" id="signup-password" />
+      <button type="button" id="signup-button">Sign Up</button>
+      <a class="toggle-link" id="show-login">Already have an account? Login</a>
+    </div>
+
+    <div class="container" id="chat-container">
+      <h2>Chat Room</h2>
+      <div id="chat-area"></div>
+      <input
+        type="text"
+        class="message-input"
+        placeholder="Type your message..."
+        id="chat-message"
+      />
+      <button type="button" id="send-message">Send</button>
+    </div>
+  </body>
+</html>
