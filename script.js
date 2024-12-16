@@ -1,4 +1,4 @@
-const baseUrl = "https://151.177.19.118:25565"; //localhost:25565
+const baseUrl = "http://151.177.19.118:25565"; //localhost:25565
 let currentUsername = "";
 
 function sendPostRequest(endpoint, data, callback) {
